@@ -1,5 +1,6 @@
 /* work sans font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather:wght@900&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
 /* shared styles */
 * {
     font-family: 'Inter', sans-serif;
@@ -8,7 +9,18 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-
+.btn-primary {
+font-size: 1.25rem;
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    color: #FFF;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+   
+}
 
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -47,19 +59,36 @@ nav li a {
 
 /* bannner styles */
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 64px;
     font-weight: 700;
     color: var(--Dark-01, #131313);
 }
-.banner-description{
+
+.banner-description {
     font-size: 16px;
     font-weight: 400;
     color: var(--Dark-03, #727272);
 
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media queries */
+@media screen   and (max-width:576px) {
+   header{ 
+    padding: 20px;
+   }
+   nav{
+    flex-direction: column;
+   } 
 }
