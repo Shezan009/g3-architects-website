@@ -1,0 +1,65 @@
+/* work sans font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather:wght@900&family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+/* shared styles */
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+}
+
+/* bannner styles */
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+}
+.banner-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Dark-03, #727272);
+
+}
