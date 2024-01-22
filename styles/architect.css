@@ -165,8 +165,17 @@ main {
 .sponsors{
     text-align: center;
 }
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
 
-
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 
 
 /* responsive media queries */
@@ -177,7 +186,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-img-container {
         flex-direction: column;
     }
 
@@ -185,6 +195,10 @@ main {
         gap: 20px;
     }
 
+.sponsors-img-container{
+    /* padding: 40px 60px;
+    gap: 30px; */
+}
     .teams-img-container {
         grid-template-columns: 1fr;
     }
